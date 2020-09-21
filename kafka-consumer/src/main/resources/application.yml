@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /consumer
+
+spring:
+  kafka:
+    bootstrap-servers: "kafka:9092"
+    consumer:
+      group-id: con1
+      auto-offset-reset: earliest
+      
+logging:
+  level:
+    com.thiago.kafkaconsumer: INFO
